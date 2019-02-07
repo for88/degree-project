@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!---
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">-->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<title>Макетная мастерская</title> 
+<script type="text/javascript"> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(51620033, "init", { id:51620033, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <!--- <noscript><div><img src="https://mc.yandex.ru/watch/51620033" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+</head>
+<body>
+    <header class="header">
+      <div class="header-wrap">
+          <nav class="menu">  
+              <ul class="menu">  
+                  <li><a href="#main">Главная</a></li>  
+                  <li><a href="#types">Виды макетов</a></li>  
+                  <li><a href="#picking">Комплектация макетов</a></li>  
+                  <li><a href="#portfolio">Реализованные проекты</a></li>  
+                  <li><a href="#clientele">Наши клиенты</a></li>
+                </ul>
+              </nav>  
+                  <div class="header-tel">
+                    <a class="header-tel__tel" href="tel:+78008913333">8 800 891-33-33</a>
+                      <div id="button-callback" class="callback call-a"> Заказать обратный звонок</div>
+                  </div>      
+      </div> 
+    </header>
+    <main id="main" class="main">
+            <div class="menuburger"> 
+                <div class="position">
+                        <div class="burger-wrap">
+                                <div class="b-menu">
+                                    <button class="toggle-hamburger toggle-hamburger__animx">
+                                        <span>menu toggle</span>
+                                      </button>
+                                        <!-- Меню гамбургер, при клике, развернутся пункты меню -->
+                                            <ul class="menu clearfix">
+                                                <li><a href="#main"><span class="text-b">Главная</span></a></li>
+                                                <li><a href="#types"> <span class="text-b">Виды макетов</span></a></li>
+                                                <li><a href="#picking"> <span class="text-b">Комплектация макетов</span></a></li>
+                                                <li><a href="#portfolio"> <span class="text-b">Реализованные проекты</span></a></li>
+                                                <li><a href="#clientele"> <span class="text-b">Наши клиенты</span></a></li>
+                                                </ul>
+                                      
+                                        
+                                </div>
+                                </div>
+                                <span class="burger-text">Меню</span>
+                                <div class="header-tel burger-tel">
+                                        <a class="burger-tel__tel" href="tel:+78008913333">8 800 891-33-33</a>
+                                        <div id="burger-callback" class="callback callback-burger"><a class="callback" href="#">Заказать обратный звонок</a></div>
+                                    </div>
+                </div>
+                    
+                            <div class="main__content">
+                                    <div class="main__content-text">
+                                      <h1 class="main-h1">Изготовление макетов любой сложности</h1>
+                                      <h2 class="h2 main-h2">Продажи. Инвестиции. Имидж.</h2>
+                                      <div class="main__list">
+                                        <div class="m__list">
+                                            <div class="main__list-img-1"></div>
+                                            <div class="main__list-text">Срок производства 
+                                                от 5 дней</div>
+                                          </div>
+                                          <div class="m__list">
+                                              <div class="main__list-img-2"></div>
+                                              <div class="main__list-text">Гарантия на макеты 
+                                                  24 месяца</div>
+                                            </div>
+                                          <div class="m__list">
+                                              <div class="main__list-img-3"></div>
+                                              <div class="main__list-text">Проектируем, изготавливаем,
+                                                  доставляем и устанавливаем</div>
+                                            </div>
+                                          <div class="m__list">
+                                              <div class="main__list-img-4"></div>
+                                              <div class="main__list-text">Застрахуем, доставим 
+                                                  и установим</div>
+                                            </div>
+                                      </div>
+                                    </div>
+                                    <div class="main__form">
+                                      <div class="main__form-text">Оставьте заявку и получите расчет стоимость макета 
+                                          <br>в течение <span class="m-bold">30 минут</span></div>
+                                          <form id="form" action="smart.php" method="POST">
+                                              <input type="text" id="user_name" name="user_name" class="input input-form input-name input-main" required="" placeholder="Ваше имя" aria-required="true">
+                                              <input type="tel" id="user_phone" name="user_phone" class="input input-form input-name input-main phone" required="" placeholder="Контактный телефон" aria-required="true">
+                                              <input type="email" id="user_email" name="email" class="input input-form input-name input-main" required="" placeholder="Электронная почта" aria-required="true">
+                                              <button type="submit" value="Отправить"  id="close" class="button button-main call-bt">Оставить заявку</button>
+                                          </form>
+                                    </div>
+                                  </div>            
+            </div>
+            <div class="main-none main__content">
+                    <div class="main__content-text">
+                      <h1 class="main-h1">Изготовление макетов любой сложности</h1>
+                      <h2 class="h2 main-h2">Продажи. Инвестиции. Имидж.</h2>
+                      <div class="main__list">
+                        <div class="m__list">
+                            <div class="main__list-img-1"></div>
+                            <div class="main__list-text">Срок производства 
+                                от 5 дней</div>
+                          </div>
+                          <div class="m__list">
+                              <div class="main__list-img-2"></div>
+                              <div class="main__list-text">Гарантия на макеты 
+                                  24 месяца</div>
+                            </div>
+                          <div class="m__list">
+                              <div class="main__list-img-3"></div>
+                              <div class="main__list-text">Проектируем, изготавливаем,
+                                  доставляем и устанавливаем</div>
+                            </div>
+                          <div class="m__list">
+                              <div class="main__list-img-4"></div>
+                              <div class="main__list-text">Застрахуем, доставим 
+                                  и установим</div>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="main__form">
+                      <div class="main__form-text">Оставьте заявку и получите расчет стоимость макета 
+                          <br>в течение <span class="m-bold">30 минут</span></div>
+                          <form id="form2" action="smart.php" method="POST">
+                              <input type="text" id="user_name2" name="user_name" class="input input-form input-name input-main" required="" placeholder="Ваше имя" aria-required="true">
+                              <input type="tel" id="user_phone2" name="user_phone" class="input input-form input-name input-main phone" required="" placeholder="Контактный телефон" aria-required="true">
+                              <input type="email" id="user_email2" name="email" class="input input-form input-name input-main" required="" placeholder="Электронная почта" aria-required="true">
+                              <button type="submit" value="Отправить"  id="close2" class="button button-main call-bt">Оставить заявку</button>
+                          </form>
+                    </div>
+                  </div>
+    </main>
+    <div class="modal modal_hidden" id="modal-callback">
+            <div class="modal__dialog dialog-form" >
+                <div class="modal__close"><span class="symbol">&#10006;</span></div>
+                    <div class="modal-form">
+                          <p class="modal-p">Заполните поля ниже - мы свяжемся с Вами</p>
+                          <form id="form3" action="smart.php" method="POST">
+                            <input type="text" id="user_name3" name="user_name" class="input input-form  input-modal input-main" required value="" placeholder="Ваше имя" aria-required="true">
+                            <input type="tel" id="user_phone3" name="user_phone" class="input input-form input-name input-main phone" required value="" placeholder="Контактный телефон" aria-required="true">
+                          <button type="submit" value="Отправить"  id="close3" class="call-a button button-text modal-button button-main" >Заказать обратный звонок</button>
+                        </form>
+                         </div>
+                </div>
+        </div>
+    <section id="types" class="price">
+        <div class="price-wrap">
+            <div class="price__title">Виды макетов</div>
+            <h2 class="h2 price-h2">Создаем макеты от небольших домов до космических станций</h2>
+         <div class="price__card">
+            <div class="price__card-wrap">
+                <div class="card-title">Архитектурные макеты</div>
+                <div class="card-img hover1"></div>
+                <div class="text">
+                    <div class="line">Многоэтажные дома</div>
+                    <div class="line">Жилые комплексы</div>
+                    <div class="line">Коттеджные посёлки</div>
+                    <div class="line">Торговые комплексы</div>
+                    <div class="line">Бизнес-парки</div>
+                    <div class="line">Административные здания</div>
+                    <div>Гостиницы и санатории</div>
+                </div>
+                <button id="button-price" class="button button-price">Рассчитать стоимость</button>
+            </div>
+            <div class="price__card-wrap">
+                    <div class="card-title">Градостроительные макеты</div>
+                    <div class="card-img hover2"></div>
+                    <div class="text">
+                        <div class="line">Области</div>
+                        <div class="line">Города</div>
+                        <div class="line">Районы</div>
+                        <div class="line">Микрорайоны</div>
+                        <div class="line">Территории</div>
+                        <div>Мосты и тоннели</div>
+                    </div>
+                    <button id="button-price2" class="button button-price">Рассчитать стоимость</button>
+            </div>
+            <div class="price__card-wrap">
+                    <div class="card-title">Промышленные макеты</div>
+                    <div class="card-img hover3"></div>
+                    <div class="text">
+                        <div class="line">Предприятия и фабрики</div>
+                        <div class="line">Энергетические объекты</div>
+                        <div class="line">Заводы</div>
+                        <div class="line">Научные центры</div>
+                        <div class="line">Трубопроводы</div>
+                        <div class="line">Производственные линии</div>
+                        <div>Технологические линии</div>
+                    </div>
+                    <button class="button button-price">Рассчитать стоимость</button>
+            </div>
+            <div class="price__card-wrap">
+                    <div class="card-title">Интерьерные макеты</div>
+                    <div class="card-img hover4"></div>
+                    <div class="text">
+                        <div class="line">Квартиры</div>
+                        <div class="line">Офисы</div>
+                        <div class="line">Коттеджы</div>
+                        <div class="line">Магазины</div>
+                        <div class="line">Спортивные комплексы</div>
+                        <div class="line">Торговые центры</div>
+                        <div>Заводы</div>
+                    </div>
+                    <button class="button button-price">Рассчитать стоимость</button>
+            </div>
+            <div class="price__card-wrap">
+                    <div class="card-title">Ландшафтные макеты</div>
+                    <div class="card-img hover5"></div>
+                    <div class="text">
+                        <div class="line">Парки</div>
+                        <div class="line">Сады</div>
+                        <div class="line">Горы</div>
+                        <div class="line">Озёра</div>
+                        <div class="line">Рельефы местности</div>
+                        <div>Участки</div>
+                    </div>
+                    <button class="button button-price">Рассчитать стоимость</button>
+            </div>
+            <div class="price__card-wrap card6">
+                    <div class="card-title">Индивидуальные макеты</div>
+                    <div class="card-img hover6"></div>
+                    <div class="text6">
+                        <div >Мы может воплотить в жизнь любые идеи, с применением высоких технологий, максимальной детализацией 
+                               <br> и совершенно любых размеров</div>
+                    </div>
+                    <button type="submit" class="button  button-price">Рассчитать стоимость</button>
+            </div>
+            
+            
+             
+         </div>
+        </div>
+    </section>
+    <div class="modal modal_hidden" id="modal-price">
+            <div class="modal__dialog dialog-form" >
+                <div class="modal__close"><span class="symbol">&#10006;</span></div>
+                    <div class="modal-form">
+                          <p class="modal-p">Заполните поля ниже - мы поможем вам рассчитать стоимость</p>
+                          <form id="form4" action="smart.php" method="POST">
+                            <input type="text" id="user_name4" name="user_name" class="input input-form  input-modal input-main input-p" required value="" placeholder="Ваше имя" aria-required="true">
+                            <input type="tel" id="user_phone4" name="user_phone" class="input input-form input-name input-main phone input-p" required value="" placeholder="Контактный телефон" aria-required="true">
+                          <button type="submit" value="Отправить"  id="close4" class="call-a button button-text modal-button button-main close submit button-p" >Заказать обратный звонок</button>
+                        </form>
+                         </div>
+                </div>
+        </div> 
+<section id="portfolio" class="portfolio">
+    <div class="portfolio-wrap">
+            <div class="portfolio__title">Реализованные проекты</div>
+            <h2 class="h2 portfolio-h2">Более 100 компаний уже решают свои бизнес – задачи с помощью наших макетов</h2>
+    <div class="slider">
+        <div class="j">
+            <div class="j-wrap">
+                <div class="j-i"> <img class="j-imj" src="img/portfolio-img/portfolio-1.png" alt=""></div>
+                <div class="j-text"> 
+                    <div class="slider-text">
+                        <div class="s-title">Порт Артек</div>
+                        <div class="h3">Описание:</div>
+                        <div class="name">Презентация порта Артек для первых лиц государства</div>
+                        <div class="detail">
+                            <div class="detail-wrap d-w">
+                                <div class="detail-text tm">Масштаб:</div>
+                                <div class="detail-number">1:200</div>
+                            </div>
+                            <div class="detail-wrap  d-w">
+                                    <div class="detail-text tm">Размер::</div>
+                                    <div class="detail-number">1000х2000</div>
+                            </div>
+                            <div class="detail-wrap">
+                                    <div class="detail-text noright">Срок изготовления::</div>
+                                    <div class="detail-number">40 дней</div>
+                            </div>
+                            
+                        </div>
+                        <button type="submit" id="button-portfolio" class="slider-button button-text"><span class="b-text"> Заказать макет</span></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="j">
+            <div class="j-wrap">
+            <div class="j-i"><img class="j-imj" src="img/portfolio-img/aero-1.jpg" alt=""></div>
+            <div class="j-text">
+                <div class="slider-text">
+                    <div class="s-title">Порт Аэро</div>
+                    <div class="h3">Описание:</div>
+                    <div class="name">Презентация порта Аэро для первых лиц государства</div>
+                    <div class="detail">
+                        <div class="detail-wrap  d-w">
+                            <div class="detail-text tm">Масштаб:</div>
+                            <div class="detail-number">2:100</div>
+                        </div>
+                        <div class="detail-wrap  d-w">
+                                <div class="detail-text tm">Размер::</div>
+                                <div class="detail-number">1000х2000</div>
+                        </div>
+                        <div class="detail-wrap">
+                                <div class="detail-text noright">Срок изготовления::</div>
+                                <div class="detail-number">40 дней</div>
+                        </div>
+                        
+                    </div>
+                    <button type="submit" id="button-portfolio2" class="slider-button button-text"><span class="b-text"> Заказать макет</span></button>
+                </div>
+            </div>
+        </div>
+                        
+        </div>                     
+        <div class="j">
+            <div class="j-wrap">
+                <div class="j-i"> <img class="j-imj" src="img/portfolio-img/grad-1.jpg" alt=""></div>
+                <div class="j-text">
+                <div class="slider-text">
+                    <div class="s-title">Grad</div>
+                    <div class="h3">Описание:</div>
+                    <div class="name">Презентация жилого комплекса Grad жилой комплекс</div>
+                    <div class="detail">
+                        <div class="detail-wrap  d-w">
+                            <div class="detail-text tm">Масштаб:</div>
+                            <div class="detail-number">8:200</div>
+                        </div>
+                        <div class="detail-wrap  d-w">
+                            <div class="detail-text tm">Размер::</div>
+                            <div class="detail-number">1000х2000</div>
+                        </div>
+                        <div class="detail-wrap">
+                            <div class="detail-text noright">Срок изготовления::</div>
+                            <div class="detail-number">40 дней</div>
+                        </div>
+                        
+                    </div>
+                    <button type="submit" id="button-portfolio3" class="slider-button button-text"><span class="b-text"> Заказать макет</span></button>
+                </div>
+            </div>
+            </div>   
+        </div>
+    </div>
+    </div>
+</section> 
+    <section id="picking" class="additional">
+        <div class="additional-wrap">
+            <div class="additional-title"> <h4>Все макеты, изготовленные нашей макетной мастерской, 
+                помогли клиентам выполнить поставленные цели, а именно:</h4>
+                </div>
+            <div class="additional-unit">
+                <div class="unit">
+                    <div class="unit__img"><img src="img/additional-img/icon1.png" alt=""></div>
+                    <div class="unit__text">Продать квартиру, дом, 
+                           <br> участок, объект.</div>
+                </div>
+                <div class="unit">
+                        <div class="unit__img"><img src="img/additional-img/icon2.png" alt=""></div>
+                        <div class="unit__text">Привлечь инвестиции 
+                               <br> в проект.</div>
+                </div>
+                <div class="unit">
+                        <div class="unit__img"><img src="img/additional-img/icon3.png" alt=""></div>
+                        <div class="unit__text">Наглядно представить объект посетителю с целью ознакомления
+                              <br>  с территорией, зданием.</div>
+                </div>
+                <div class="unit">
+                        <div class="unit__img"><img src="img/additional-img/icon4.png" alt=""></div>
+                        <div class="unit__text">Представить проект 
+                                первым лицам государства,
+                                 <br>компании.</div>
+                </div>
+                <div class="unit">
+                        <div class="unit__img"><img src="img/additional-img/icon5.png" alt=""></div>
+                        <div class="unit__text">Обучение сотрудников, военнослужащих,  студентов 
+                               <br> и т.д.</div>
+                </div>
+                <div class="unit">
+                        <div class="unit__img"><img src="img/additional-img/icon6.png" alt=""></div>
+                        <div class="unit__text">Получить разрешение 
+                                <br>на строительство, 
+                                <br>согласование проекта.</div>
+                </div>
+                <div class="unit">
+                        <div class="unit__img"><img src="img/additional-img/icon7.png" alt=""></div>
+                        <div class="unit__text">Бизнес подарок.</div>
+                </div>
+                <div class="unit">
+                        <div class="unit__img"><img src="img/additional-img/icon8.png" alt=""></div>
+                        <div class="unit__text">Дополнить интерьер.</div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section id="clientele" class="clientele">
+        <div class="clientele-wrap">
+            <div class="clientele-title"><h4>Наши клиенты</h4></div>
+            <div class="slider-j">
+                    <div class="j clientele-j"><img class="clientele-imj top" src="img/clientele-img/clientele1.png" alt=""></div>
+                    <div class="j clientele-j"><img class="clientele-imj" src="img/clientele-img/clientele2.png" alt=""></div>
+                    <div class="j clientele-j"><img class="clientele-imj" src="img/clientele-img/clientele3.png" alt=""></div>
+                    <div class="j clientele-j"><img class="clientele-imj" src="img/clientele-img/clientele4.png" alt=""></div>
+                    <div class="j clientele-j"><img class="clientele-imj" src="img/clientele-img/clientele5.png" alt=""></div>
+                    <div class="j clientele-j"><img class="clientele-imj top" src="img/clientele-img/clientele1.png" alt=""></div>
+                    <div class="j clientele-j"><img class="clientele-imj" src="img/clientele-img/clientele2.png" alt=""></div>
+                    <div class="j clientele-j"><img class="clientele-imj" src="img/clientele-img/clientele3.png" alt=""></div>
+                    <div class="j clientele-j"><img class="clientele-imj" src="img/clientele-img/clientele4.png" alt=""></div>
+                    <div class="j clientele-j"><img class="clientele-imj" src="img/clientele-img/clientele5.png" alt=""></div>
+
+        </div> 
+        </div>
+    </section>
+    <section class="map"> 
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A71fe4f9c561f37b390223720b786169b449c2baa96442a9aa8c132da2175cdf3&amp;width=-1&amp;height=416&amp;lang=ru_RU&amp;scroll=false"></script>
+    </section>
+<footer class="footer">
+        <div class="footer-wrap">
+            <div class="footer-adress">
+                <img class="f-icon" src="img/f-icon.png" alt="">
+                <div class="adress-text">г. Москва, 
+                       <br> Автомоторная улица, 4А, стр.21</div>
+            </div>
+            
+            <div class="footer-call">
+                    <div class="footer-tel">
+                            <a class="tel-f" href="tel:+78008913333">8 800 891-33-33</a>
+                              <div id="button-callback2" class="callback call-f call-a"> Заказать обратный звонок</div>
+                          </div> 
+            </div>
+        </div>
+</footer> <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>   
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script>
+        new WOW().init(); 
+    </script>
+
+    <script>
+            $('form').submit(function(event) {
+                event.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: "mailer/smart.php",
+                    data: $(this).serialize()
+                }).done(function() {
+                window.location = "http://for88.ru/Land/win.html";
+            });
+            return false;
+                });
+    </script>
+
+
+<!--Модальные-->
+<script>
+        $(document).ready(function () {
+            $('.modal__close').on('click', function(){
+                $('#modal-callback').hide();
+            });
+            $('#button-callback, #button-callback2, #button-portfolio, #button-portfolio2, #button-portfolio3, #burger-callback').on('click', function(){
+                $('#modal-callback').show();
+            });
+            
+        });
+    </script>
+    <script>
+            $(document).ready(function () {
+                $('.modal__close').on('click', function(){
+                    $('#modal-price').hide();
+                });
+                $('.button-price').on('click', function(){
+                    $('#modal-price').show();
+                });
+                
+            });
+        </script>
+ <!--Маска для телефона!!!!!!!-->
+    <script>
+            $(document).ready(function(){
+            $(".phone").inputmask("+7(999) 99-99-999"); //mask with dynamic syntax
+            });
+            
+        </script> 
+ <!--Слайдеры!!!!!!!-->
+<script>
+        $(document).ready(function(){
+      $('.slider'). slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        nextArrow: '<div class="arrow arrow_right"></div>',
+        prevArrow: '<div class="arrow arrow_left"></div>',
+        responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 940,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 720,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 410,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+    });
+    </script>
+<script>
+        $(document).ready(function(){
+      $('.slider-j'). slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        nextArrow: '<div class="arrow arrow_right-j"></div>',
+        prevArrow: '<div class="arrow arrow_left-j"></div>',
+        responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 720,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 365,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+    });
+    </script>
+<!--Бургер меню-->
+<script>
+    $(document).ready(function(){
+        $('.toggle-hamburger').on('click', function(){
+            $('.menu').slideToggle(300, function(){
+                if($(this).css('display')==='none'){
+                    $(this).removeAttr('style');
+                }
+            });
+        });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+
+"use strict";
+
+var toggles = document.querySelectorAll(".toggle-hamburger");
+
+for (var i = toggles.length - 1; i >= 0; i--) {
+  var toggle = toggles[i];
+  toggleHandler(toggle);
+};
+
+function toggleHandler(toggle) {
+  toggle.addEventListener( "click", function(e) {
+    e.preventDefault();
+    (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+  });
+}
+
+})();
+</script>
+
+<!--Аналитика-->   
+<script>
+    document.querySelector('.call-a').addEventListener('click',function(){
+        "ym(51620033, 'reachGoal', 'btn'); return true;"
+    })
+    
+</script>
+<script>
+        document.querySelector('.call-bt').addEventListener('click',function(){
+            "ym(51620033, 'reachGoal', 'bt'); return true;"
+        })
+        
+    </script>
+</body>
+</html>
