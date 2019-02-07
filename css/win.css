@@ -1,0 +1,58 @@
+/*Настройки для win.html//////*/
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('../fonts/ProximaNova-Light.eot');
+  src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Light.woff') format('woff'),
+  url('../fonts/ProximaNova-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+body{
+  background-color: #23bac1;
+}
+.win{
+  width: 100%;
+  height: 598px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+
+}
+.win-form{
+  display: block;
+  margin: auto;
+  width: 370px;
+  height: 370px;
+  background-color: #ffffff;
+  text-align: center;
+}
+a{
+  height: 14px;
+  color: #22bac1;
+  font-family:'Proxima Nova Regular', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+  outline: none;
+  cursor: pointer;
+}
+.win-h2{
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-family:'Proxima Nova Regular', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+}
+.win-title{
+  color: #22bac1;
+  font-family:'Proxima Nova Regular', sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 90px;
+}
