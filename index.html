@@ -33,30 +33,28 @@
       </div> 
     </header>
     <main id="main" class="main">
-            <div class="menuburger"> 
-                <div class="position">
-                        <div class="burger-wrap">
-                                <div class="b-menu">
-                                    <button class="toggle-hamburger toggle-hamburger__animx">
-                                        <span>menu toggle</span>
-                                      </button>
-                                        <!-- Меню гамбургер, при клике, развернутся пункты меню -->
-                                            <ul class="menu clearfix">
-                                                <li><a href="#main"><span class="text-b">Главная</span></a></li>
-                                                <li><a href="#types"> <span class="text-b">Виды макетов</span></a></li>
-                                                <li><a href="#picking"> <span class="text-b">Комплектация макетов</span></a></li>
-                                                <li><a href="#portfolio"> <span class="text-b">Реализованные проекты</span></a></li>
-                                                <li><a href="#clientele"> <span class="text-b">Наши клиенты</span></a></li>
-                                                </ul>
-                                      
-                                        
-                                </div>
-                                </div>
-                                <span class="burger-text">Меню</span>
-                                <div class="header-tel burger-tel">
-                                        <a class="burger-tel__tel" href="tel:+78008913333">8 800 891-33-33</a>
-                                        <div id="burger-callback" class="callback callback-burger"><a class="callback" href="#">Заказать обратный звонок</a></div>
-                                    </div>
+        <div class="menuburger"> 
+            <div class="position">
+                <div class="burger-wrap">
+                    <div class="b-menu">
+                        <button class="toggle-hamburger toggle-hamburger__animx">
+                        <span>menu toggle</span>
+                        </button>
+                        <!-- Меню гамбургер, при клике, развернутся пункты меню -->
+                            <ul class="menu clearfix">
+                                <li><a href="#main"><span class="text-b">Главная</span></a></li>
+                                <li><a href="#types"> <span class="text-b">Виды макетов</span></a></li>
+                                <li><a href="#picking"> <span class="text-b">Комплектация макетов</span></a></li>
+                                <li><a href="#portfolio"> <span class="text-b">Реализованные проекты</span></a></li>
+                                <li><a href="#clientele"> <span class="text-b">Наши клиенты</span></a></li>
+                            </ul>      
+                        </div>
+                    </div>
+                        <span class="burger-text">Меню</span>
+                        <div class="header-tel burger-tel">
+                                <a class="burger-tel__tel" href="tel:+78008913333">8 800 891-33-33</a>
+                                <div id="burger-callback" class="callback callback-burger"><a class="callback" href="#">Заказать обратный звонок</a></div>
+                            </div>
                 </div>
                     
                             <div class="main__content">
@@ -258,32 +256,32 @@
     <div class="slider">
         <div class="j">
             <div class="j-wrap">
-                <div class="j-i"> <img class="j-imj" src="img/portfolio-img/portfolio-1.png" alt=""></div>
-                <div class="j-text"> 
-                    <div class="slider-text">
-                        <div class="s-title">Порт Артек</div>
-                        <div class="h3">Описание:</div>
-                        <div class="name">Презентация порта Артек для первых лиц государства</div>
-                        <div class="detail">
-                            <div class="detail-wrap d-w">
-                                <div class="detail-text tm">Масштаб:</div>
-                                <div class="detail-number">1:200</div>
-                            </div>
-                            <div class="detail-wrap  d-w">
-                                    <div class="detail-text tm">Размер::</div>
-                                    <div class="detail-number">1000х2000</div>
-                            </div>
-                            <div class="detail-wrap">
-                                    <div class="detail-text noright">Срок изготовления::</div>
-                                    <div class="detail-number">40 дней</div>
-                            </div>
-                            
+            <div class="j-i"><img class="j-imj img-one" src="img/portfolio-img/portfolio-1.png" alt=""></div>
+            <div class="j-text">
+                <div class="slider-text">
+                    <div class="s-title">Порт Артек</div>
+                    <div class="h3">Описание:</div>
+                    <div class="name">Презентация порта Артек для первых лиц государства</div>
+                    <div class="detail">
+                        <div class="detail-wrap  d-w">
+                            <div class="detail-text tm">Масштаб:</div>
+                            <div class="detail-number">2:100</div>
                         </div>
-                        <button type="submit" id="button-portfolio" class="slider-button button-text"><span class="b-text"> Заказать макет</span></button>
+                        <div class="detail-wrap  d-w">
+                                <div class="detail-text tm">Размер::</div>
+                                <div class="detail-number">1000х2000</div>
+                        </div>
+                        <div class="detail-wrap">
+                                <div class="detail-text noright">Срок изготовления::</div>
+                                <div class="detail-number">50 дней</div>
+                        </div>
+                        
                     </div>
+                    <button type="submit" id="button-portfolio2" class="slider-button button-text"><span class="b-text"> Заказать макет</span></button>
                 </div>
-
             </div>
+        </div>
+                        
         </div>
         <div class="j">
             <div class="j-wrap">
@@ -448,7 +446,7 @@
                     url: "mailer/smart.php",
                     data: $(this).serialize()
                 }).done(function() {
-                window.location = "http://for88.ru/Land/win.html";
+                window.location = "http://for88.ru/Landing/win.html";
             });
             return false;
                 });
